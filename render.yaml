@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: rozikoff-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python Server.py
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: 8902002895:AAHzNGjrwh3-dQndCFT1fp_-pgltn_fBc6c
+      - key: WEBHOOK_URL
+        value: https://rozikoff-bot.onrender.com
